@@ -1,6 +1,11 @@
 package com.example.maps_test;
 
+import android.media.Image;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +22,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
-
+    ImageView imgView1;
     private GoogleMap mMap;
 
     @Override
@@ -27,6 +32,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        imgView1 = (ImageView) findViewById(R.id.imageView);
+        imgView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "이미지뷰 클릭했음", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     public void onMapReady(final GoogleMap googleMap) {
         mMap = googleMap;
