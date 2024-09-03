@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/round_white_23"/>
+    <item android:drawable="@drawable/___32"
+        android:gravity="center"/>
+</layer-list>
