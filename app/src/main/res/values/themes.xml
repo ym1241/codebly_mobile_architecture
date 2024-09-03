@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Uesr_setting" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorControlNormal">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        출처: https://grusie.tistory.com/entry/Android-커스텀-데이트-피커-만들기Number-Picker [Grusie 안드로이드 개발 기술 블로그:티스토리]
+    </style>
+
+    <style name="Theme.Uesr_setting" parent="Base.Theme.Uesr_setting" />
+</resources>
+
