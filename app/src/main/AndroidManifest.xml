@@ -16,7 +16,7 @@
             android:name=".activity_general_home_location"
             android:exported="false" />
         <activity
-            android:name=".activity_general_nickname"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".activity_general_gender"
@@ -25,7 +25,7 @@
             android:name=".activity_general_birth_date"
             android:exported="false" />
         <activity
-            android:name=".activity_signup"
+            android:name=".activity_general_nickname"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
