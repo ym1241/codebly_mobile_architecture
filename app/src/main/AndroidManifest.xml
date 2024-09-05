@@ -13,16 +13,10 @@
         android:theme="@style/Theme.Maps_test"
         tools:targetApi="31">
         <activity
-            android:name=".AppbarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NotificationActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ViewPagerActivity"
             android:exported="false" />
 
         <meta-data
@@ -30,7 +24,7 @@
             android:value="AIzaSyBAeh73Aa0brOY82-tAXdFw8Hc8OREehMI" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

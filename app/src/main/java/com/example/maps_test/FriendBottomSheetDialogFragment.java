@@ -32,6 +32,28 @@ public class FriendBottomSheetDialogFragment extends BottomSheetDialogFragment {
         // 친구 목록 데이터 설정 (예시)
         friendList.add(new Friend("홍길동"));
         friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+        friendList.add(new Friend("김철수"));
+
+
+
+
+
+
+
         // ...
 
         adapter = new FriendAdapter(friendList);
