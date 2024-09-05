@@ -5,13 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class activity_general_gender extends AppCompatActivity {
+public class GeneralGenderActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +17,7 @@ public class activity_general_gender extends AppCompatActivity {
         img12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_general_gender.this, activity_general_home_location.class));
+                startActivity(new Intent(GeneralGenderActivity.this, GeneralHomeLocationActivity.class));
             }
         });
     }
