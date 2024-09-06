@@ -21,4 +21,5 @@ public class activity_signup extends AppCompatActivity {
             return insets;
         });
     }
+    //merge attempt1
 }
