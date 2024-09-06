@@ -13,19 +13,19 @@
         android:theme="@style/Theme.Uesr_setting"
         tools:targetApi="31">
         <activity
-            android:name=".activity_general_home_location"
+            android:name=".GeneralHomeLocationActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_general_nickname"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_general_gender"
+            android:name=".GeneralGenderActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_general_birth_date"
+            android:name=".GeneralBirthDateActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_signup"
+            android:name=".GeneralNameActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
