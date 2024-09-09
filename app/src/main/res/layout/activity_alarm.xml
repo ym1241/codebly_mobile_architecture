@@ -15,6 +15,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sound" />
 
+        <!--수정-->
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
