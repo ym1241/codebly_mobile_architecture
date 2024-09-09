@@ -45,6 +45,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toTopOf="@+id/view"
+        android:onClick="onSearchClick"
         app:srcCompat="@drawable/search_icon" />
 
     <View
