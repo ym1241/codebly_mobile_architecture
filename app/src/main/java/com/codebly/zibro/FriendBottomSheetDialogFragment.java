@@ -36,16 +36,6 @@ public class FriendBottomSheetDialogFragment extends BottomSheetDialogFragment {
         friendList.add(new Friend("김철수"));
         friendList.add(new Friend("김철수"));
         friendList.add(new Friend("김철수"));
-
-
-
-
-
-
-
-
-        // ...
-
         adapter = new FriendAdapter(friendList);
         recyclerView.setAdapter(adapter);
 
