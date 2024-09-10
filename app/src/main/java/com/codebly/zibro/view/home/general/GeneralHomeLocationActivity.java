@@ -1,8 +1,10 @@
-package com.codebly.zibro;
+package com.codebly.zibro.view.home.general;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.codebly.zibro.R;
 
 public class GeneralHomeLocationActivity extends AppCompatActivity {
 

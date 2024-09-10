@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_alter_friends">
+    tools:context=".view.friend.activity_alter_friends">
 
     <ImageView
         android:id="@+id/imageView15"
