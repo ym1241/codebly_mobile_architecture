@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.codebly.zibro.R;
-import com.codebly.zibro.activity_search_friend;
+import com.codebly.zibro.view.home.menu.friends.activity_search_friend;
 
 public class activity_friend_page extends AppCompatActivity {
 ImageView imageView27, imageView26;

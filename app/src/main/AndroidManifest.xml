@@ -22,8 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.friend.activity_friends"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".activity_search_friend"/>
+        <activity android:name=".view.home.menu.friends.activity_search_friend"/>
         <activity android:name=".view.friend.activity_alter_friends"/>
     </application>
 
