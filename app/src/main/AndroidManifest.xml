@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zibro"
         tools:targetApi="31">
+        <activity android:name=".view.home.HomeActivity"/>
+        <activity android:name=".view.friend.activity_friend_page" />
+        <activity android:name=".view.login.SignUpActivity" />
+        <activity android:name=".view.login.activity_login" />
 
         <activity android:name=".view.friend.activity_friend_page"></activity>
         <activity android:name=".view.login.SignUpActivity"></activity>
@@ -19,7 +23,7 @@
         <activity android:name=".view.home.nav_header"></activity>
         <activity android:name=".view.home.activity_alarm"></activity>
         <activity
-            android:name=".view.home.HomeActivity"
+            android:name=".CustomerServiceActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
