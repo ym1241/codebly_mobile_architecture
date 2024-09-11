@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.codebly.zibro.view.friend.activity_friend_page;
 import com.google.android.material.navigation.NavigationView;
 import android.widget.TextView;
 import com.codebly.zibro.R;
@@ -61,9 +63,8 @@ public class HomeActivity extends AppCompatActivity{
 
         //drawerlayout 끝
 
-        ImageView profileImage = headerView.findViewById(R.id.imageView8);
-
-        profileImage.setOnClickListener(new View.OnClickListener() {
+        // drawerlayout에서 버튼 클릭시 화면전환 코드 시작
+        imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 클릭 시 새로운 Activity로 화면 전환
@@ -72,4 +73,26 @@ public class HomeActivity extends AppCompatActivity{
 
             }
         });
+
+        imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 클릭 시 새로운 Activity로 화면 전환
+                Intent intent = new Intent(HomeActivity.this, activity_friend_page.class);
+                startActivity(intent);
+
+            }
+        });
+
+        imageView11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 클릭 시 새로운 Activity로 화면 전환
+                Intent intent = new Intent(HomeActivity.this, activity_my_page.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }}
