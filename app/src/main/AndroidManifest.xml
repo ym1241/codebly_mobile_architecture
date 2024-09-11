@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zibro"
         tools:targetApi="31">
+
+        <activity android:name=".view.friend.activity_friend_page"></activity>
+        <activity android:name=".view.login.SignUpActivity"></activity>
+        <activity android:name=".view.login.activity_login"></activity>
         <activity
             android:name=".view.home.HomeActivity"
             android:exported="true">
@@ -26,6 +30,11 @@
         <activity android:name=".view.friend.activity_friends"/>
         <activity android:name=".view.home.menu.friends.activity_search_friend"/>
         <activity android:name=".view.friend.activity_alter_friends"/>
+        <activity android:name=".view.home.general.GeneralBirthDateActivity"/>
+        <activity android:name=".view.home.general.GeneralGenderActivity"/>
+        <activity android:name=".view.home.general.GeneralHomeLocationActivity"/>
+        <activity android:name=".view.home.general.GeneralNameActivity"/>
+
     </application>
 
 </manifest>

@@ -10,17 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.codebly.zibro.R;
 
 public class GeneralBirthDateActivity extends AppCompatActivity {
-
+ImageView imageView6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general_birth_date);
-        ImageView img6 = (ImageView) findViewById(R.id.imageView6);
-        img6.setOnClickListener(new View.OnClickListener() {
+        imageView6 = (ImageView) findViewById(R.id.imageView6);
+        imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GeneralBirthDateActivity.this, GeneralGenderActivity.class));
-            }
+            }//용만이가 중단시킴
         });
     }
 }
