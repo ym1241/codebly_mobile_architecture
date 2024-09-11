@@ -1,6 +1,7 @@
 package com.codebly.zibro.view.home;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,13 +15,13 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 import android.widget.TextView;
-
 import com.codebly.zibro.R;
 
 
 public class HomeActivity extends AppCompatActivity{
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,7 @@ public class HomeActivity extends AppCompatActivity{
         });
 
 
+        //drawerlayout 시작
         drawerLayout = findViewById(R.id.drawer_layout);
 
         navigationView = findViewById(R.id.nav_view);
@@ -56,5 +58,18 @@ public class HomeActivity extends AppCompatActivity{
                 drawerLayout.openDrawer(findViewById(R.id.nav_view));
             }
         });
-    }
-}
+
+        //drawerlayout 끝
+
+        ImageView profileImage = headerView.findViewById(R.id.imageView8);
+
+        profileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 클릭 시 새로운 Activity로 화면 전환
+                Intent intent = new Intent(HomeActivity.this, activity_alarm.class);
+                startActivity(intent);
+
+            }
+        });
+    }}

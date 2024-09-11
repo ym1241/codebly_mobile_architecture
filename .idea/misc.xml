@@ -18,4 +18,11 @@
     <output url="file://$PROJECT_DIR$/out" />
 >>>>>>> fb6a596ff4665f2c7240e96499169b4d66cb5166
   </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.45" />
+      </ProjectState>
+    </option>
+  </component>
 </project>
