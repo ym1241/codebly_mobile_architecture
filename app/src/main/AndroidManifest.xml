@@ -27,6 +27,11 @@
         <activity android:name=".view.friend.activity_friends"/>
         <activity android:name=".view.home.menu.friends.activity_search_friend"/>
         <activity android:name=".view.friend.activity_alter_friends"/>
+        <activity android:name=".view.home.general.GeneralBirthDateActivity"/>
+        <activity android:name=".view.home.general.GeneralGenderActivity"/>
+        <activity android:name=".view.home.general.GeneralHomeLocationActivity"/>
+        <activity android:name=".view.home.general.GeneralNameActivity"/>
+
     </application>
 
 </manifest>

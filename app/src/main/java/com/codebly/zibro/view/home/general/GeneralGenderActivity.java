@@ -10,17 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.codebly.zibro.R;
 
 public class GeneralGenderActivity extends AppCompatActivity {
-
+ImageView imageView12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general_gender);
-        ImageView img12 = (ImageView) findViewById(R.id.imageView12);
-        img12.setOnClickListener(new View.OnClickListener() {
+        imageView12 = (ImageView) findViewById(R.id.imageView12);
+        imageView12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(GeneralGenderActivity.this, GeneralHomeLocationActivity.class));
-            }
+            }//용만이가 중단 시킴
         });
     }
 }
