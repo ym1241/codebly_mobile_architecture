@@ -13,14 +13,16 @@
         android:theme="@style/Theme.Zibro"
         tools:targetApi="31">
         <activity
-            android:name=".view.friend.activity_friend_page"
+            android:name=".view.home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.common.Toolbar"/>
+        <activity android:name=""
+        <activity android:name=".view.friend.activity_friend_page"/>
         <activity android:name=".view.friend.activity_friends"/>
         <activity android:name=".view.home.menu.friends.activity_search_friend"/>
         <activity android:name=".view.friend.activity_alter_friends"/>
