@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.home.menu.friends.activity_search_friend">
+    tools:context=".view.home.menu.friends.SearchFriendActivity">
 
     <ImageView
         android:id="@+id/imageView4"

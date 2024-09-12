@@ -22,7 +22,7 @@ ImageView imageView37;
                 startActivity(new Intent(GeneralHomeLocationActivity.this, HomeActivity.class));
             }
         });
-        setContentView(R.layout.activity_general_home_location);
+        setContentView(R.layout.fragment_general_home_location);
         //코드 구현 중단- 용만이가 시킴
     }
 }

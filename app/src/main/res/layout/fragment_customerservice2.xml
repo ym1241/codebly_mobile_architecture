@@ -54,6 +54,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/icon_5" />
 
+    <!--다른파일에 이동되는 이미지뷰-->
+    <!-- 눌렀을시 확장되는 textView는 fragment로 옮겨질 것임-->
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"

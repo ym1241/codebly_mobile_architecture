@@ -1,22 +1,21 @@
 package com.codebly.zibro.view.home;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.graphics.drawable.DrawableWrapper;
 import android.widget.ImageView;
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.codebly.zibro.view.friend.activity_friend_page;
+import com.codebly.zibro.view.home.menu.customerservice.CustomerServiceActivity;
+import com.codebly.zibro.view.home.menu.friends.FriendPageActivity;
+import com.codebly.zibro.view.home.menu.alarm.AlarmActivity;
+import com.codebly.zibro.view.home.menu.mypage.MyPageActivity;
 import com.google.android.material.navigation.NavigationView;
-import android.widget.TextView;
 import com.codebly.zibro.R;
 
 
@@ -68,7 +67,7 @@ public class HomeActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // 클릭 시 새로운 Activity로 화면 전환
-                Intent intent = new Intent(HomeActivity.this, activity_alarm.class);
+                Intent intent = new Intent(HomeActivity.this, AlarmActivity.class);
                 startActivity(intent);
 
             }
@@ -78,7 +77,7 @@ public class HomeActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // 클릭 시 새로운 Activity로 화면 전환
-                Intent intent = new Intent(HomeActivity.this, activity_friend_page.class);
+                Intent intent = new Intent(HomeActivity.this, FriendPageActivity.class);
                 startActivity(intent);
 
             }
@@ -88,7 +87,17 @@ public class HomeActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 // 클릭 시 새로운 Activity로 화면 전환
-                Intent intent = new Intent(HomeActivity.this, activity_my_page.class);
+                Intent intent = new Intent(HomeActivity.this, MyPageActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        //고객센터
+        imageView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 클릭 시 새로운 Activity로 화면 전환
+                Intent intent = new Intent(HomeActivity.this, CustomerServiceActivity.class);
                 startActivity(intent);
 
             }

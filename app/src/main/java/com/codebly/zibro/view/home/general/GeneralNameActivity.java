@@ -2,7 +2,6 @@ package com.codebly.zibro.view.home.general;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -19,7 +18,7 @@ public class GeneralNameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_nickname);
+        setContentView(R.layout.fragment_general_nickname);
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), GeneralBirthDateActivity.class);

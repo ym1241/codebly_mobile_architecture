@@ -1,4 +1,4 @@
-package com.codebly.zibro.view.friend;
+package com.codebly.zibro.view.home.menu.friends;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,25 +11,31 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.codebly.zibro.R;
-import com.codebly.zibro.view.home.menu.friends.activity_search_friend;
 
-public class activity_friend_page extends AppCompatActivity {
+public class FriendPageActivity extends AppCompatActivity {
 ImageView imageView27, imageView26;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_friend_page);
+        setContentView(R.layout.fragment_friend_page);
+
+        //친구 검색
         imageView27 = (ImageView)findViewById(R.id.imageView27);
         imageView27.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), activity_search_friend.class);
+            Intent intent = new Intent(getApplicationContext(), SearchFriendActivity.class);
             startActivity(intent);
-
         });
+        //친구 편집
         imageView26 = (ImageView)findViewById(R.id.imageView26);
         imageView26.setOnClickListener(view1 -> {
-            Intent intent1 = new Intent(getApplicationContext(),activity_alter_friends.class);
+            Intent intent1 = new Intent(getApplicationContext(), AlterFriendsActivity.class);
             startActivity(intent1);
-        } );
+        });
+
+        //친구 추가는 QR코드이라서 나중에 작성
+        /*
+        * 코드는 여기에
+        * */
 
         EdgeToEdge.enable(this);
 

@@ -1,4 +1,4 @@
-package com.codebly.zibro.view.home;
+package com.codebly.zibro.view.home.menu.friends;
 
 import android.os.Bundle;
 
@@ -10,13 +10,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.codebly.zibro.R;
 
-public class activity_my_page extends AppCompatActivity {
+public class SearchFriendActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_alarm);
+        setContentView(R.layout.activity_search_friend);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

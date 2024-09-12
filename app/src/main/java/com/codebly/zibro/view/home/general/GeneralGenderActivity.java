@@ -14,7 +14,7 @@ ImageView imageView12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_gender);
+        setContentView(R.layout.fragment_general_gender);
         imageView12 = (ImageView) findViewById(R.id.imageView12);
         imageView12.setOnClickListener(new View.OnClickListener() {
             @Override

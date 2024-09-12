@@ -1,4 +1,4 @@
-package com.codebly.zibro.view.home;
+package com.codebly.zibro.view.home.bottom;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -39,7 +39,6 @@ public class FriendBottomSheetDialogFragment extends BottomSheetDialogFragment {
         friendList.add(new Friend("김철수"));
         adapter = new FriendAdapter(friendList);
         recyclerView.setAdapter(adapter);
-
         return view;
     }
 

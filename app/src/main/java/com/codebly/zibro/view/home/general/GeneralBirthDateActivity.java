@@ -14,7 +14,7 @@ ImageView imageView6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_birth_date);
+        setContentView(R.layout.fragment_general_birth_date);
         imageView6 = (ImageView) findViewById(R.id.imageView6);
         imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
