@@ -13,10 +13,14 @@
         android:theme="@style/Theme.Zibro"
         tools:targetApi="31">
         <activity
+            android:name=".view.noti.NotiActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,9 +36,8 @@
         <activity android:name=".view.home.menu.alarm.AlarmActivity" />
         <activity android:name=".view.home.menu.customerservice.CustomerServiceActivity" />
         <activity android:name=".view.home.menu.friends.SearchFriendActivity" />
-        <activity android:name=".view.home.menu.mypage.MyPageActivity"/>
-        <activity android:name=".view.home.menu.myplace.MyPlaceActivity"/>
-
+        <activity android:name=".view.home.menu.mypage.MyPageActivity" />
+        <activity android:name=".view.home.menu.myplace.MyPlaceActivity" />
     </application>
 
 </manifest>
