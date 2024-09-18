@@ -5,7 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!-- TODO : 내 장소화면-->
+    <!-- TODO : 오른쪽 상단 버튼 알람화면-->
+    <!-- TODO : 네이게이션 스크롤되는 문제 있음.-->
+    <!-- TODO : ? 아이콘 화면전환 필요-->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"

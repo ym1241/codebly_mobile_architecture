@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.codebly.zibro.R;
 
-public class GeneralNameActivity extends AppCompatActivity {
+public class GeneralNameFragment extends AppCompatActivity {
     ImageView imageView3;
 
     @Override
@@ -21,7 +21,7 @@ public class GeneralNameActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_general_nickname);
         imageView3 = (ImageView) findViewById(R.id.imageView3);
         imageView3.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), GeneralBirthDateActivity.class);
+            Intent intent = new Intent(getApplicationContext(), GeneralBirthDateFragment.class);
             startActivity(intent);
         });
         EdgeToEdge.enable(this);

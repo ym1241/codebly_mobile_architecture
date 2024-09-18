@@ -37,6 +37,12 @@ ImageView imageView13;
             startActivity(intent);
 
         });
+        // TODO : SignIn 버튼 누르면, (activity_home)으로 전환
+        // TODO : ID찾기 화면과 구현
+        // TODO : PW찾기 화면과 구현
+        // TODO : 카카오톡으로 로그인
+        // TODO : 네이버로 로그인 구현
+        // TODO : 로그인 상태 유지 버튼 누르면 다시 꺼지지 않음 -> login 템플릿이용하면 괜찮음
     }
 
 

@@ -25,15 +25,18 @@
         <activity android:name=".view.home.menu.friends.AlterFriendsActivity" />
         <activity android:name=".view.login.SignUpActivity" />
         <activity android:name=".view.login.LoginActivity" />
-        <activity android:name=".view.home.general.GeneralBirthDateActivity" />
-        <activity android:name=".view.home.general.GeneralGenderActivity" />
-        <activity android:name=".view.home.general.GeneralHomeLocationActivity" />
-        <activity android:name=".view.home.general.GeneralNameActivity" />
+        <activity android:name=".view.home.general.GeneralBirthDateFragment" />
+        <activity android:name=".view.home.general.GeneralGenderFragment" />
+        <activity android:name=".view.home.general.GeneralHomeLocationFragment" />
+        <activity android:name=".view.home.general.GeneralNameFragment" />
         <activity android:name=".view.home.menu.alarm.AlarmActivity" />
         <activity android:name=".view.home.menu.customerservice.CustomerServiceActivity" />
         <activity android:name=".view.home.menu.friends.SearchFriendActivity" />
         <activity android:name=".view.home.menu.mypage.MyPageActivity"/>
         <activity android:name=".view.home.menu.myplace.MyPlaceActivity"/>
+<!--        TODO : activity_notification 알림/공지사항 화면 구성
+            TODO : 알림과 공지사항 메세지 동적으로 메세지 뜨게 설계(백엔드?)
+-->
 
     </application>
 

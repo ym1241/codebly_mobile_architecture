@@ -6,7 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.home.search.activity_search2">
-
+    <!-- TODO : fragment화하기 -->
+    <!-- TODO : SearchFragement.java 변경, 분할 -->
+    <!-- TODO : 대중교통, 도보 예상시간 -->
+    <!-- TODO : 경로 보여주기 -->
+    <!-- TODO : 툴바 추가 -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"

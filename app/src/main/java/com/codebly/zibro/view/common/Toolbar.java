@@ -14,6 +14,7 @@ public class Toolbar extends AppCompatActivity {
     Toolbar tlbr = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(tlbr);
      */
+
     ActionBar actionBar = getSupportActionBar();
     //actionBar.setDisplayHomeAsUpEnabled(true); //뒤로가기버튼
 }

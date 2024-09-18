@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.login.SignUpActivity">
-
+    <!-- TODO : 툴바 추가 -->
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="130dp"
@@ -165,7 +165,12 @@
         app:layout_constraintStart_toStartOf="@+id/imageView22"
         app:layout_constraintTop_toBottomOf="@+id/imageView22"
         app:srcCompat="@drawable/black_line" />
-
+    <!-- TODO 0 : 이용약관 동의,
+        TODO 1 : 개인정보 수집 및 이용동의,
+        TODO 2 : 전체 약관 동의 체크박스 없음,
+        TODO 3 : 이용약관 동의,
+        TODO 4 : 개인정보 수집 및 이용 동의 누르면 약관 나오는 기능 구현
+ -->
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="wrap_content"

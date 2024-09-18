@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@null"
-    tools:context=".view.home.general.GeneralGenderActivity">
+    tools:context=".view.home.general.GeneralGenderFragment">
 
     <ImageView
         android:id="@+id/imageView8"

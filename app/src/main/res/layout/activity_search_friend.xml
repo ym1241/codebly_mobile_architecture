@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.home.menu.friends.SearchFriendActivity">
-
+    <!-- TODO : 툴바 추가 -->
+    <!-- TODO : 친구 검색 기능
+     TODO : 친구 목록 띄우기 기능 -->
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"

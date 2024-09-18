@@ -21,6 +21,7 @@ public class CustomerServiceActivity extends AppCompatActivity {
         actionBar.setHomeAsUpIndicator(R.drawable.baseline_arrow_back_24);
         //actionBar.setDisplayShowTitleEnabled(false);
 
+        // TODO : 고객센터 기능 구현
     }
 
     @Override

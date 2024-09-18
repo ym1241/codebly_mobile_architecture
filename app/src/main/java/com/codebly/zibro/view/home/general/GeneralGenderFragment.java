@@ -9,8 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.codebly.zibro.R;
 
-public class GeneralGenderActivity extends AppCompatActivity {
-ImageView imageView12;
+public class GeneralGenderFragment extends AppCompatActivity {
+//아직 fragment관련 클래스 내부 수정하지 않았음.
+    ImageView imageView12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,7 @@ ImageView imageView12;
         imageView12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GeneralGenderActivity.this, GeneralHomeLocationActivity.class));
+                startActivity(new Intent(GeneralGenderFragment.this, GeneralHomeLocationFragment.class));
             }//용만이가 중단 시킴
         });
     }

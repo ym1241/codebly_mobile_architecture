@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.codebly.zibro.R;
 import com.codebly.zibro.view.home.HomeActivity;
 
-public class GeneralHomeLocationActivity extends AppCompatActivity {
+public class GeneralHomeLocationFragment extends AppCompatActivity {
 ImageView imageView37;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ ImageView imageView37;
         imageView37.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(GeneralHomeLocationActivity.this, HomeActivity.class));
+                startActivity(new Intent(GeneralHomeLocationFragment.this, HomeActivity.class));
             }
         });
         setContentView(R.layout.fragment_general_home_location);

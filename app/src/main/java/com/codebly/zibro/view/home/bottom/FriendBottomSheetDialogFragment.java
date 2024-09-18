@@ -15,7 +15,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//fragment 구현 완료
 public class FriendBottomSheetDialogFragment extends BottomSheetDialogFragment {
 
     private RecyclerView recyclerView;
@@ -82,8 +82,6 @@ public class FriendBottomSheetDialogFragment extends BottomSheetDialogFragment {
                 }
             });
         }
-
-
         @Override
         public int getItemCount() {
             return friends.size();
@@ -92,7 +90,6 @@ public class FriendBottomSheetDialogFragment extends BottomSheetDialogFragment {
 
     public class FriendViewHolder extends RecyclerView.ViewHolder {
         RadioButton radioButton;
-
         public FriendViewHolder(@NonNull View itemView) {
             super(itemView);
             radioButton = itemView.findViewById(R.id.radioButton);
