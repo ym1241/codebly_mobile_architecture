@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExpandableListView_example</string>
+    <string name="question2">
+        안녕하세요 저는 기요마이 입니다. 이것에 대해 궁금해하셨나요?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi, architecto beatae corporis dignissimos, dolorem esse excepturi facere fugiat hic id in ipsum laborum nam nisi officia possimus repellendus voluptatum.
+    </string>
+</resources>
