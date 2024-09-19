@@ -44,7 +44,7 @@ public class HomeActivity extends AppCompatActivity{
         // imageView1 = headerView.findViewById(R.id.imageView3);
         ImageView imageView11 = headerView.findViewById(R.id.imageView11);
         //ImageView imageView10 = headerView.findViewById(R.id.imageView10);
-        ImageView imageView9 = headerView.findViewById(R.id.imageView9);
+        ImageView imageView9 = headerView.findViewById(R.id.imageView9);//고객센터
        // ImageView imageView2 = headerView.findViewById(R.id.imageView2);
         ImageView imageView8 = headerView.findViewById(R.id.imageView8);
         ImageView imageView7 = headerView.findViewById(R.id.imageView7);

@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/toolbar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/text"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/general_setting"
+        app:titleTextColor="@color/white" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -44,24 +56,38 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/icon_4" />
 
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:divider="@color/text"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@android:color/transparent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+
+    <!--다른파일에 이동되는 이미지뷰-->
+    <!-- 눌렀을시 확장되는 textView는 fragment로 옮겨질 것임-->
+    <!--
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/question1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/icon_5" />
-
-    <!--다른파일에 이동되는 이미지뷰-->
-    <!-- 눌렀을시 확장되는 textView는 fragment로 옮겨질 것임-->
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/question1_context1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/question1"
+        app:layout_constraintTop_toBottomOf="@+id/question1"
         app:srcCompat="@drawable/service_qbox" />
 
     <ImageView
@@ -70,65 +96,64 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/question1_context1"
+        app:layout_constraintTop_toTopOf="@+id/question1_context1"
         app:srcCompat="@drawable/service_a" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/question2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/question1_context1"
+        app:layout_constraintTop_toBottomOf="@+id/question1_context1"
         app:srcCompat="@drawable/icon_6" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/question2_divider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/question2"
+        app:layout_constraintTop_toBottomOf="@+id/question2"
         app:srcCompat="@drawable/icon_11" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/question3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/question2"
+        app:layout_constraintTop_toBottomOf="@+id/question2_divider"
         app:srcCompat="@drawable/icon_7" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/question3_divider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/question3"
+        app:layout_constraintTop_toBottomOf="@+id/question3"
         app:srcCompat="@drawable/icon_11" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/question4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="@+id/question3"
+        app:layout_constraintTop_toBottomOf="@+id/question3_divider"
         app:srcCompat="@drawable/icon_8" />
-
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/question4_divider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16"
-        app:srcCompat="@drawable/icon_10" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/question4"
+        app:layout_constraintTop_toBottomOf="@+id/question4"
+        app:srcCompat="@drawable/icon_11" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -138,15 +163,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/question4_divider"
         app:srcCompat="@drawable/icon_11" />
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:srcCompat="@drawable/icon_11" />
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/question4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/icon_10" />
+    -->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
