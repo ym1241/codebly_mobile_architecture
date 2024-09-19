@@ -56,16 +56,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/icon_4" />
 
-    <ExpandableListView
-        android:id="@+id/expandableListView"
+    <!--TODO : 리사이클바구현은 되었으나, 스크롤이 안됨 : 높이가 match여야만 스크롤이 됨. match하면 위치가 달라짐-->
+    <!-- TODO : 어차피 모든 위젯뷰가 너비비율재야하지만, 이것도 마진이 점점 커짐.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
-        android:divider="@color/text"
-        android:dividerHeight="1dp"
-        android:groupIndicator="@android:color/transparent"
-        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
 
