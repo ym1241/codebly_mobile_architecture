@@ -75,7 +75,13 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter{
             LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(android.R.layout.simple_list_item_1, null);
         }
-
+        // TODO : 리스트에 폰트사이즈, 아이콘 설정. gpt에 있음.
+        //groupIcon.setImageResource(R.drawable.ic_question);
+        //TextView groupTextView = convertView.findViewById(R.id.group_text);
+        //ImageView groupIcon = convertView.findViewById(R.id.group_icon);
+        //
+        //groupTextView.setText(groupTitle);
+        //groupIcon.setImageResource(R.drawable.ic_question);
         TextView textView = convertView.findViewById(android.R.id.text1);
         textView.setText(childText);
         return convertView;
