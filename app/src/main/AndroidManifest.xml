@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.home.bottom.FriendBottomSheetDialogFragment"
+            android:theme="@style/AppBottomSheetDialogTheme" />
         <activity android:name=".view.home.menu.friends.FriendPageActivity" />
         <activity android:name=".view.home.menu.friends.FriendsActivity" />
         <activity android:name=".view.home.menu.friends.AlterFriendsActivity" />

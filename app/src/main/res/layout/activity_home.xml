@@ -23,7 +23,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        <!-- TODO : imageView + textview -->
         <ImageView
             android:id="@+id/content_imageView"
             android:layout_width="wrap_content"
@@ -31,9 +30,10 @@
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:srcCompat="@drawable/content" />
+        <!-- TODO : 검색창 imageView추가-->
 
         <ImageView
-            android:id="@+id/search_button"
+            android:id="@+id/BtnSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/view"
@@ -41,7 +41,7 @@
             app:srcCompat="@drawable/search_button" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/BtnHamburger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10.88dp"
@@ -51,37 +51,34 @@
             app:srcCompat="@drawable/menu_button" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/BtnSOS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            app:layout_constraintEnd_toEndOf="@+id/search_button"
-            app:layout_constraintStart_toStartOf="@+id/search_button"
-            app:layout_constraintTop_toBottomOf="@+id/search_button"
+            app:layout_constraintEnd_toEndOf="@+id/BtnSearch"
+            app:layout_constraintStart_toStartOf="@+id/BtnSearch"
+            app:layout_constraintTop_toBottomOf="@+id/BtnSearch"
             app:srcCompat="@drawable/sos_button" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/BtnMyPoint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/BtnSOS"
+            app:layout_constraintStart_toStartOf="@+id/BtnSOS"
+            app:layout_constraintTop_toBottomOf="@+id/BtnSOS"
             app:srcCompat="@drawable/my_waypoint_button" />
 
         <ImageView
-            android:id="@+id/start_button_imageView"
+            android:id="@+id/BtnStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="37dp"
-            android:onClick="helloworld"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/button_start" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Navigation View (Drawer) -->

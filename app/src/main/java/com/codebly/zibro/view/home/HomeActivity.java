@@ -6,109 +6,107 @@ import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.codebly.zibro.R;
+import com.codebly.zibro.view.home.bottom.FriendBottomSheetDialogFragment;
+import com.codebly.zibro.view.home.menu.alarm.AlarmActivity;
 import com.codebly.zibro.view.home.menu.customerservice.CustomerServiceActivity;
 import com.codebly.zibro.view.home.menu.friends.FriendPageActivity;
-import com.codebly.zibro.view.home.menu.alarm.AlarmActivity;
 import com.codebly.zibro.view.home.menu.mypage.MyPageActivity;
 import com.google.android.material.navigation.NavigationView;
-import com.codebly.zibro.R;
-
 
 public class HomeActivity extends AppCompatActivity{
     private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
-
+    private ConstraintLayout bottomSheetFriends;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imageView5), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
 
         //drawerlayout 시작
         drawerLayout = findViewById(R.id.drawer_layout);
-
-        navigationView = findViewById(R.id.nav_view);
-
+        NavigationView navigationView = findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
 
-        // imageView1 = headerView.findViewById(R.id.imageView3);
-        ImageView imageView11 = headerView.findViewById(R.id.imageView11);
-        //ImageView imageView10 = headerView.findViewById(R.id.imageView10);
-        ImageView imageView9 = headerView.findViewById(R.id.imageView9);//고객센터
-       // ImageView imageView2 = headerView.findViewById(R.id.imageView2);
-        ImageView imageView8 = headerView.findViewById(R.id.imageView8);
-        ImageView imageView7 = headerView.findViewById(R.id.imageView7);
-        //ImageView imageView6 = headerView.findViewById(R.id.imageView6);
-        //ImageView imageView4 = headerView.findViewById(R.id.imageView4);
-        ImageView imageView5 = findViewById(R.id.imageView5);
-
-        imageView5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 드로어 열기
-                drawerLayout.openDrawer(findViewById(R.id.nav_view));
-            }
-        });
-
-        //drawerlayout 끝
-
-        // drawerlayout 에서 버튼 클릭시 화면 전환 코드 시작
-        imageView8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 클릭 시 새로운 Activity로 화면 전환
-                Intent intent = new Intent(HomeActivity.this, AlarmActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        imageView7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 클릭 시 새로운 Activity로 화면 전환
-                Intent intent = new Intent(HomeActivity.this, FriendPageActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        imageView11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 클릭 시 새로운 Activity로 화면 전환
-                Intent intent = new Intent(HomeActivity.this, MyPageActivity.class);
-                startActivity(intent);
-
-            }
-        });
-        // TODO : 이미지뷰 이름변환
-        //고객센터
+        // TODO : 위젯들 이름좀 바꾸기. xml에서 id값먼저 다바꾸고 그다음에는 자바.
+        //여기 이미지 뷰는 headerview에 가져온 위젯들임. 유의할것.
+        ImageView imageView9 = headerView.findViewById(R.id.imageView9);
         imageView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 클릭 시 새로운 Activity로 화면 전환
                 Intent intent = new Intent(HomeActivity.this, CustomerServiceActivity.class);
                 startActivity(intent);
+            }
+        });
+        ImageView imageView7 = headerView.findViewById(R.id.imageView7);
+        imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, FriendPageActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageView8 = headerView.findViewById(R.id.imageView8);
+        imageView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AlarmActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageView11 = headerView.findViewById(R.id.imageView11);
+        imageView11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MyPageActivity.class);
+                startActivity(intent);
+            }
+        });
+        // TODO : Popup알림설정
+
+        // 여기부터는 home에 있는 id임.
+        ImageView btnHamburger = findViewById(R.id.BtnHamburger);
+        btnHamburger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(findViewById(R.id.nav_view));
+            }
+        });
+        // TODO : 상단에 장소 검색
+        // TODO : 검색후 (activity_location_search_list 화면전환)
+        ImageView btnSearch = findViewById(R.id.BtnSearch);
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO : LocationSearchActivity 만들기
+                //Intent intent = new Intent(HomeActivity.this, LocationSearchActivity.class);
+                //startActivity(intent);
+            }
+        });
+        ImageView btnMyPoint = findViewById(R.id.BtnMyPoint);
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO : 구글맵스 내위치 띄우기
 
             }
         });
+        // TODO : SOS화면
+        // TODO : 집으로 버튼 누르면 위치 공유할 친구 선택 bottomsheet 나오는 기능
+        ImageView btnStart = findViewById(R.id.BtnStart);
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO : bottomsheet 열기
+                FriendBottomSheetDialogFragment bottomSheet = new FriendBottomSheetDialogFragment();
+                bottomSheet.show(getSupportFragmentManager(), bottomSheet.getTag());
+            }
+        });
+        // TODO : 눌렀으면 공유버튼 작동
 
-
+        // TODO map : 맵 구현.
+        // TODO : setonclicklistener 컨테이너 담아서 사용. -> 불가능.
     }
-    // TODO : SOS화면
-    // TODO : 집으로 버튼 누르면 위치 공유할 친구 선택 bottomsheet 나오는 기능
-    // TODO : 상단에 장소 검색
-    // TODO : 검색후 (activity_location_search_list 화면전환)
-    // TODO map : 맵 구현
 }
