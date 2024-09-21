@@ -6,7 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.home.general.GeneralBirthDateFragment">
+    <!-- TODO(1) :
+     63
 
+     intent을 이용하여 액티비티 그대로 유지, 데이터 전달-->
     <!-- TODO : 툴바 추가할필요 없음 = activity_general.xml에 추가하면됨 -->
     <ImageView
         android:id="@+id/imageView5"

@@ -55,6 +55,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/settingicon" />
 
+    <!-- TODO(1) : imageview+ 리스너 -->
+    <!-- TODO(2) : 추가될때마다 리스트 add -->
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"

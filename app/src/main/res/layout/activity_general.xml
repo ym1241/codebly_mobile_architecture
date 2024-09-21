@@ -2,6 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!--TODO(1) : intent 사용하면 데이터 다른 액티비티에 가져올수있음-->
     <!--
     <fragment
         android:layout_width="match_parent"
