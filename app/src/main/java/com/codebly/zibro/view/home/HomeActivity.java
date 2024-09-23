@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -15,24 +16,43 @@ import com.codebly.zibro.view.home.menu.customerservice.CustomerServiceActivity;
 import com.codebly.zibro.view.home.menu.friends.FriendPageActivity;
 import com.codebly.zibro.view.home.menu.alarm.AlarmActivity;
 import com.codebly.zibro.view.home.menu.mypage.MyPageActivity;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.navigation.NavigationView;
 import com.codebly.zibro.R;
 
 
-public class HomeActivity extends AppCompatActivity{
+public class HomeActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private MapView mapView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imageView5), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
+        mapView = findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(@NonNull GoogleMap googleMap) {
+                LatLng location = new LatLng(37.4600, 127.1271 );
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 15));
+
+
+                // 마커 추가
+                googleMap.addMarker(new MarkerOptions()
+                        .position(location)
+                        .title("내 핀")
+                        .snippet("이곳이 내가 지정한 장소"));
+            }
+        });
 
         //drawerlayout 시작
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -104,4 +124,31 @@ public class HomeActivity extends AppCompatActivity{
         });
 
 
-    }}
+    }
+    // MapView 라이프사이클 메서드 추가
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
+    }
+}
+
+
