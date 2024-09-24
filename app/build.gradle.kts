@@ -1,6 +1,17 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     alias(libs.plugins.android.application)
 }
+
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+
+if(localPropertiesFile.exists()){
+    localProperties.load(FileInputStream(localPropertiesFile))}
+
+val apikey: String = localProperties.getProperty("API_KEY") ?: ""
 
 android {
     namespace = "com.codebly.zibro"
@@ -13,7 +24,15 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        resValue("string","api_key",apikey)
+
+        buildConfigField("String", "API_KEY", "\"$apikey\"")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        buildConfig = true
     }
 
     buildTypes {
