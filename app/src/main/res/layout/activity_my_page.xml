@@ -84,4 +84,13 @@
         app:layout_constraintEnd_toEndOf="@+id/userId"
         app:layout_constraintTop_toBottomOf="@+id/userId"
         app:srcCompat="@drawable/my_qr_text" />
+
+    <Button
+        android:id="@+id/BtnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="로그아웃"
+        app:layout_constraintStart_toStartOf="@+id/userqr"
+        app:layout_constraintTop_toBottomOf="@+id/userqr" />
 </androidx.constraintlayout.widget.ConstraintLayout>

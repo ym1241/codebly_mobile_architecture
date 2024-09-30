@@ -7,6 +7,7 @@ import com.codebly.zibro.data.model.LoggedInUser;
  * maintains an in-memory cache of login status and user credentials information.
  */
 public class LoginRepository {
+    //싱글톤 패턴을 사용하여 로그인 데이터를 관리하는 클래스입니다.
 
     private static volatile LoginRepository instance;
 

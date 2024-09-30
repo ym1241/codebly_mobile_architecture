@@ -25,7 +25,7 @@ public class CustomerServiceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_customerservice2);
+        setContentView(R.layout.activity_customer_service);
 
         //toolbar내용
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

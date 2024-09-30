@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.home.search.activity_search">
-    <!-- TODO : 툴바 추가 -->
-    <!-- TODO(feature) : GoogleMaps에서 정보 가져오고난 상황을 textview나 ratingbar로 만들기 -->
+    <!-- TODO : 툴바 수정 -->
     <androidx.appcompat.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"

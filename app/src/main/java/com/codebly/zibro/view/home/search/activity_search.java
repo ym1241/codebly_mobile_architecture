@@ -15,12 +15,10 @@ public class activity_search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_search);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        // TODO(feature) : GoogleMaps에서 정보 가져오고난 상황을 textview나 ratingbar로 만들기
+        // TODO : 나머지 3개 fragment로 전환. 하나의 액티비티.
+
+        // TODO : 모든 ui 구성이 끝나면, 여기서부터 TCP 라이브데이터가 필요.
     }
 }

@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Zibro" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Theme.AppCompat.Light로 하면, 안드 material 테마사라짐-->
+    <style name="Base.Theme.Zibro" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>

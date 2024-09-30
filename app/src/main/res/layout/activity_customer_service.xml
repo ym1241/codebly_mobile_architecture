@@ -36,6 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_2" />
+    <!-- TODO :  TextView추가  -->
 
     <ImageView
         android:id="@+id/imageView4"
@@ -61,8 +62,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="323dp"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_marginTop="17dp"
+        android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />

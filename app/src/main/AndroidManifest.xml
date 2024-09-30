@@ -13,21 +13,24 @@
         android:theme="@style/Theme.Zibro"
         tools:targetApi="31">
         <activity
-            android:name=".view.home.HomeActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".view.home.bottom.FriendBottomSheetDialogFragment"
             android:theme="@style/AppBottomSheetDialogTheme" />
+        <activity android:name=".view.login.AutoLoginActivity"/>
+        <activity android:name=".view.home.HomeActivity" />
         <activity android:name=".view.home.menu.friends.FriendPageActivity" />
         <activity android:name=".view.home.menu.friends.FriendsActivity" />
         <activity android:name=".view.home.menu.friends.AlterFriendsActivity" />
         <activity android:name=".view.login.SignUpActivity" />
-        <activity android:name=".view.login.LoginActivity" />
+
         <activity android:name=".view.home.general.GeneralBirthDateFragment" />
         <activity android:name=".view.home.general.GeneralGenderFragment" />
         <activity android:name=".view.home.general.GeneralHomeLocationFragment" />
