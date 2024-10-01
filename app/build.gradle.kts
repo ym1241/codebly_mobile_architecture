@@ -54,6 +54,16 @@ android {
 }
 
 dependencies {
+
+
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.gson)
+    implementation(libs.androidx.cardview)
+    implementation(libs.google.maps.utils)
+    implementation(libs.google.location)
+    implementation(libs.okhttp)
+    implementation(libs.play.services.location)
+    implementation(libs.google.places)
     implementation(libs.google.maps)
     implementation(libs.appcompat)
     implementation(libs.material)
