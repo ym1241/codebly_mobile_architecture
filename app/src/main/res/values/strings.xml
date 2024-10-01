@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Zibro</string>
+    <string name="map_view_description">This is a map view displaying the current location.</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -15,4 +16,16 @@
     <string name="signup">회원가입</string>
     <string name="general_setting">기본 설정</string>
     <string name="aa">aa</string>
+
+    <!-- 사용자 이름과 현재 위치를 정의합니다. -->
+    <string name="user_name">사용자</string>
+    <string name="current_location">현재 위치</string>
+
+    <!-- 알림 메시지 포맷 -->
+    <string name="departure_message">%1$s님이 %2$s에서 출발하였습니다.</string>
+
+    <!-- activity_noti text -->
+    <string name="views">알림</string>
+    <string name="subscriber">공지사항</string>
+
 </resources>
